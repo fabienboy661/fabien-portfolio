@@ -633,3 +633,13 @@ nav ul li a:hover::after{
     background-color: #ff004f;
     color: #ffffff;
 }
+
+
+    
+#skills,
+#diplomas {
+    margin-top: 30px;  /* Réduit l’espace au-dessus */
+    margin-bottom: 30px; /* Réduit l’espace en dessous */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
