@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="app.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const skillBars = document.querySelectorAll('.skill-bar');
+    
+        function fillBars() {
+            skillBars.forEach(function(bar) {
+                const skillPercentage = bar.getAttribute('data-skill');
+                bar.style.width = skillPercentage + '%';
+            });
+        }
+    
+        function checkScroll() {
+            const skillSection = document.getElementById('skills');
+            const sectionPosition = skillSection.getBoundingClientRect();
+    
+            if (sectionPosition.top <= window.innerHeight && sectionPosition.bottom >= 0) {
+                fillBars(); 
+                window.removeEventListener('scroll', checkScroll); 
+            }
+        }
+    
+        window.addEventListener('scroll', checkScroll);
+        checkScroll();
+    });
+    </script> -->
+    </body>
+    
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>    
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#experience">EXPERIENCE</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#education">EDUCATION</a></li>
+                    <!-- <li><a href="#reference">REFERENCE</a></li> -->
+                    <li><a href="#diplomas">DIPLOMAS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <img src="images/fabien-01.jpeg" alt="Photo de profil" class="profile-pic">
+                <h1>Fabien </br> ANDRIANAMBININTSOA</h1>
+                <p>DevOps Engineer</p>
+                <div class="buttons">
+                    <a href="#" class="btn">Hire Me</a>
+                    <a href="#" class="btn btn-secondary">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ----About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1> <br>
+                    <p style="margin-bottom: 10px;">DevOps Engineer with over 3 years of experience. Passionate about automation, cloud infrastructure, and setting up CI/CD pipelines, I have gained solid experience in managing cloud environments (AWS, GCP, Azure) and containerized environments (Docker, Kubernetes).<p>
+                        I have optimized CI/CD pipelines, integrated DevSecOps practices, and automated configuration management using Terraform and Ansible. My expertise also includes implementing observability tools (Prometheus, Grafana) to monitor the performance and resilience of production systems. </p><br>
+                    </p>I have achieved significant results, such as a 30% cost optimization of AWS expenses through automated reserved instances, reduced deployment time by 50% through optimized CI/CD pipelines, and strengthened security by integrating DevSecOps practices into the pipelines from the development phase. </p><br> 
+                        Passionate about technical challenges, I stay up to date with emerging technologies to maximize infrastructure performance while optimizing costs and strengthening system security.</p></br>
+                        <!-- <p>Key skills: AWS, Kubernetes, Terraform, Docker, CI/CD, DevSecOps, Prometheus, Grafana, CloudFormation, GitLab CI, Jenkins, Ansible.</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----Skills -->
+    <div id="skills">
+        <div class="skills-title">
+            <h2>Skills</h2>
+        </div>
+        <div class="experience-item">
+        <div class="container">
+            <div class="skills-section">
+                    <div class="skill-item">
+                        <span class="skill-label">Docker</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 85%;"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">Kubernetes</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 80%;"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">AWS services, GCP</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 70%;"></div>
+                        </div>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">Python & Shell Scripting</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 72%;"></div>
+                        </div>
+                        <span class="skill-percentage">72%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">Terraform, Ansible</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 76%;"></div>
+                        </div>
+                        <span class="skill-percentage">76%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">PosrgreSQL, Mysql, MongoDB</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 75%;"></div>
+                        </div>
+                        <span class="skill-percentage">87%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">Jenkins, Gitlab-CI, GitHub Actions </span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 70%;"></div>
+                        </div>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">Git, Gitlab</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 70%;"></div>
+                        </div>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">Linux</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 80%;"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">DevSecOps</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 70%;"></div>
+                        </div>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">Prometheus, Grafana, ELK Stack</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 80%;"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-label">GitOps</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" style="width: 62%;"></div>
+                        </div>
+                        <span class="skill-percentage">62%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----Diplomas -->
+    <div id="diplomas" class="diploma-section">
+        <div class="diploma-title">
+            <h2>Degrees & Transcripts</h2>
+        </div>
+        <div class="diploma-list">
+            <div class="diploma-item">
+                <h3>Master’s Degree in Computer Science</h3>
+                <a href="https://drive.google.com/file/d/TON_ID_2/view?usp=sharing" target="_blank" class="diploma-link">View Master Degree</a>
+            </div>
+            <div class="diploma-item">
+                <h3>Bachelor’s Degree in Computer Science</h3>
+                <a href="https://drive.google.com/drive/folders/1BXjkKCm5MvB9KlCsKXGxHe2OaYerjMO8?usp=drive_link" target="_blank" class="diploma-link">View Bachelor Degree</a>
+            </div>
+            <div class="diploma-item">
+                <h3>Academic Transcripts</h3>
+                <a href="https://drive.google.com/drive/folders/1BGzdw-Rr7vP3TaVmem8_3C6Uch9fB2q9?usp=drive_link" target="_blank" class="diploma-link">View Transcripts</a>
+            </div>
+            <div class="diploma-item">
+                <h3>High School Diploma</h3>
+                <a href="https://drive.google.com/drive/folders/1BUznBDBi8aBgJebuZELptZZzfM_y24cT?usp=sharing" target="_blank" class="diploma-link">View Master Degree</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Experience -->
+  <div id="experience">
+    <div class="container">
+        <div class="skills-title">
+            <h2>Experience</h2>
+        </div>
+
+      <div class="experience-item">
+        <div class="job-title">
+          <h3>DevOps</h3>
+          <p class="company-name">Mokolos Andoharanofotsy, Antananarivo</p>
+          <p class="dates">November 2024 - Present</p>
+        </div>
+        <ul class="responsibilities">
+          <li>Cloud infrastructure management (AWS, GCP) and VPS server administration.</li>
+          <li>Setup and maintenance of GitLab and Jenkins servers, creation and optimization of CI/CD pipelines.</li>
+          <li>Application containerization with Docker and container management.</li>
+          <li>Application deployment on Kubernetes and cluster management.</li>
+          <li>Applying best practices to minimize downtime and manage incidents.</li>
+          <li>Backup management, system security, and incident resolution.</li>
+          <li>Using Terraform for cloud resource management and automation.</li>
+          <li>Using Ansible for server configuration management.</li>
+          <li>Setup and maintenance of GitLab and Jenkins servers, CI/CD pipeline creation and optimization (GitLab CI, GitHub Actions, Jenkins).</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="job-title">
+          <h3>DevOps Intern</h3>
+          <p class="company-name">Mokolos Andoharanofotsy, Antananarivo</p>
+          <p class="dates">April 2024 - October 2024</p>
+        </div>
+        <ul class="responsibilities">
+          <li>Setup of cloud infrastructure on GCP and web application deployment.</li>
+          <li>Configuration of GitLab and Jenkins, CI/CD pipeline creation.</li>
+          <li>Application containerization with Docker and container management.</li>
+          <li>Deployment on Kubernetes and microservice orchestration.</li>
+          <li>Test automation and production monitoring.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="title">Projects</h2>
+      <div class="experience-item">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col">
+            <div class="card">
+                <img src="images/jenkins.png" alt="CI/CD Kubernetes" class="card-img-top">
+                <div class="card-body">
+                <h4 class="card-title">CI/CD to Kubernetes(GKE)</h4> <br>
+                <p><strong>Tools:</strong> Jenkins, GCP, Docker, GitHub</p> <br>
+                <div class="buttons"> 
+                    <a href="https://github.com/fabienboy661/mokolos-wp.git" target="_blank" class="btn">GitHub Link</a> <br>
+                </div>
+                </div>
+            </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="col">
+            <div class="card">
+                <img src="images/aws.jpeg" alt="FastAPI CI/CD" class="card-img-top">
+                <div class="card-body">
+                <h4 class="card-title">CI/CD to FastAPI on EC2</h4> <br>
+                <p><strong>Tools:</strong> GitHub Actions, FastAPI, EC2</p> <br>
+                <div class="buttons">
+                    <a href="https://github.com/fabienboy661/ci-cd-fastapi.git" target="_blank" class="btn">GitHub Link</a> <br>
+                </div>    
+            </div>
+            </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card">  
+                    <img src="images/gitlab-ci-cd.jpg" alt="Python CI/CD" class="card-img-top">
+                    <div class="card-body">
+                    <h4 class="card-title">CI/CD with GitLab CI to ec2</h4> <br>
+                    <p><strong>Tools:</strong> GitLab CI, Python, EC2</p> <br>
+                    <div class="buttons">
+                        <a href="https://gitlab.com/fabien4960344/gitlab-cicd-project.git" target="_blank" class="btn">GitLab Link</a> <br>
+                    </div>    
+                </div>
+                </div>
+                </div>
+
+        </div>
+     </div>
+    </div>
+
+    <!-- Education -->
+    <div id="education">
+        <div class="container">
+            <div class="skills-title">
+                <h2>Education</h2>
+            </div>
+    
+            <!-- Master 2 -->
+            <div class="experience-item">
+                <div class="left-column">
+                    <p class="dates">2023 - 2024</p>
+                    <p class="diploma">Master Two</p>
+                </div>
+                <div class="right-column">
+                    <h3>Second Year of Professional Master's Degree</h3>
+                    <p class="company-name">Degree: Master Two</p>
+                    <p class="company-name">Ecole Nationale d’Informatique (ENI), Fianarantsoa, Madagascar</p>
+                    <ul class="education-details">
+                        <li>Specialized in advanced software engineering and project management</li>
+                        <li>Worked on real-world case studies and professional internships</li>
+                        <li>Focused on innovation and research-based methodologies</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Master 1 -->
+            <div class="experience-item">
+                <div class="left-column">
+                    <p class="dates">2022 - 2023</p>
+                    <p class="diploma">Master One</p>
+                </div>
+                <div class="right-column">
+                    <h3>First Year of Professional Master's Degree</h3>
+                    <p class="company-name">Ecole Nationale d’Informatique (ENI), Fianarantsoa, Madagascar</p>
+                    <ul class="education-details">
+                        <li>Built solid foundation in system architecture and cloud infrastructure</li>
+                        <li>Completed academic and industrial projects in full-stack development</li>
+                        <li>Courses included DevOps practices and software quality assurance</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Licence -->
+            <div class="experience-item">
+                    <div class="left-column">
+                        <p class="dates">2021 - 2022</p>
+                        <p class="diploma">Bachelor's Degree</p>
+                    </div>
+                <div class="right-column">
+                    <h3>Third Year of Professional Bachelor's Degree</h3>
+                    <p class="company-name">Degree: Professional Bachelor's Degree (Licence Professionnelle)</p>
+                    <p class="company-name">Ecole Nationale d’Informatique (ENI), Fianarantsoa, Madagascar</p>
+                    <ul class="education-details">
+                        <li>Focused on object-oriented programming, database systems, and networks</li>
+                        <li>Participated in hackathons and team-based tech challenges</li>
+                        <li>Graduated with a specialization in software development</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- High School -->
+            <div class="experience-item">
+                <div class="left-column">
+                    <p class="dates">2017 - 2018</p>
+                    <p class="diploma">High School Diploma</p>
+                </div>
+                <div class="right-column">
+                    <h3>Scientific Baccalaureate – Series D</h3>
+                    <p class="company-name">Saint Joseph de Cluny, Tambohobe – Fianarantsoa, Madagascar</p>
+                    <ul class="education-details">
+                        <li>Graduated with honors – “Fairly Good Mention”</li>
+                        <li>Strong background in Mathematics, Physics, and Natural Sciences</li>
+                        <li>Academic path focused on logic and scientific reasoning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievements -->
+    <div id="achievements">
+        <div class="container">
+        <div class="skills-title">
+            <h2>Achievements</h2>
+        </div>
+        <div class="card1 achievement-card1">
+            <div class="card-body1">
+            <ul class="responsibilities">
+                <li>Reduced AWS infrastructure cost by 30% through automation of reserved instances and rightsizing.</li>
+                <li>Improved deployment efficiency by 50% by optimizing CI/CD pipelines with GitLab and Jenkins.</li>
+                <li>Integrated DevSecOps practices into development pipelines, improving security posture from development to production.</li>
+                <li>Successfully deployed a complete microservices architecture on Kubernetes with zero-downtime rollouts.</li>
+                <li>Led the migration of legacy infrastructure to Terraform and Ansible, increasing automation coverage by 70%.</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- ----Contact -->
+    <div id="contact">
+        <div class="container">
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-info">
+                <p>If you have any questions, feel free to get in touch with me via the form below or by email:</p>
+                <div class="contact-details">
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:fabien01999@gmail.com">fabien01999@gmail.com</a></p>
+                    <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> <a href="tel:+261381972063">+261 38 19 720 63</a></p>
+                </div>
+            </div>
+    
+            <!-- Contact Form -->
+            <form action="your-backend-url" method="POST" class="contact-form">
+                <div class="form-row">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+    
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <div class="form-row">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+    
+                <div class="form-row">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+<!-- Footer -->
+<footer id="footer">
+    <div class="footer-container">
+        <div class="social-links">
+            <a href="https://github.com/fabienboy661" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/fabien-andrianambinintsoa-b9b399284" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+        <p>© All rights reserved.</p>
+    </div>
+</footer>
+
+  </section>
+</body>
+</html>
