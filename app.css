@@ -135,6 +135,14 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 80%;
     border-radius: 15px;
+    /* margin-top: 70px;  */
+}
+@media (max-width: 768px) {
+    .about-col-1 img {
+        width: 60%;
+        margin-top: 90px; /* Appliqué uniquement en mode mobile */
+        margin-bottom: 20px;
+    }
 }
 .about-col-2{
     flex-basis: 60%;
@@ -144,6 +152,7 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: #fff;
 }
+
 
 /* Skills */
 #skills {
@@ -207,7 +216,40 @@ nav ul li a:hover::after{
     text-align: right;
 }
 
-
+/* ------------------------Skills (responsive) */
+@media (max-width: 768px) {
+    #skills {
+      padding: 40px 5%;           /* moins de padding latéral */
+    }
+  
+    .skills-section {
+      flex-direction: column;     /* empile les skill-items */
+      gap: 15px;
+    }
+  
+    .skill-item {
+      width: 100%;                /* pleine largeur */
+      flex-direction: column;     /* label, barre et % empilés */
+      align-items: flex-start;
+      gap: 8px;
+    }
+  
+    .skill-label,
+    .skill-bar-container,
+    .skill-percentage {
+      width: 100%;                /* chaque élément prend toute la largeur */
+    }
+  
+    .skill-bar-container {
+      margin: 0;                  /* on supprime l’overflow éventuel */
+      height: 10px;               /* on peut réduire un peu la hauteur */
+    }
+  
+    .skill-percentage {
+      text-align: left;           /* pour coller la % sous la barre */
+    }
+  }
+  
 /* experience */
 .experience-item {
     background-color:  #141414;
@@ -369,6 +411,33 @@ nav ul li a:hover::after{
     padding-left: 20px;
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    #education .experience-item {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    #education .left-column {
+      width: 100%;
+      min-width: 100%;
+      border-radius: 8px 8px 0 0;
+    }
+  
+    #education .right-column {
+      padding-left: 0;
+      padding-top: 20px;
+    }
+  
+    #education .experience-item::before {
+      display: none;
+    }
+  
+    #education .education-details {
+      padding-left: 0;
+    }
+  }
+  
 
 /* achievement */
 .card1 {
